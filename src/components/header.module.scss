@@ -1,0 +1,48 @@
+@import "../Styles/sass/variables";
+
+.header {
+  background-color: $colorGrey-light;
+  &_nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+}
+
+.logo {
+  text-decoration: none;
+
+  font-size: 4rem;
+  h1 {
+    font-family: $font-display;
+    color: $mainColor;
+  }
+  span {
+    color: $secondaryColor;
+  }
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  margin: 0;
+  &_item {
+    color: $mainColor;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-right: 2rem;
+    transition: all 0.3s ease;
+  }
+  &_item:hover {
+    color: $mainColor-light;
+  }
+  &_item-active {
+    color: $secondaryColor;
+  }
+}

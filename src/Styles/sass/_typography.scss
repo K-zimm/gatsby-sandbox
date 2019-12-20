@@ -1,0 +1,85 @@
+%heading {
+  font-family: $font-display;
+  font-weight: 400;
+}
+
+.heading-1 {
+  @extend %heading;
+  font-size: 4.5rem;
+  color: $colorGrey-dark;
+  line-height: 1;
+}
+
+.heading-2 {
+  @extend %heading;
+  font-size: 4rem;
+  font-style: italic;
+  line-height: 1;
+
+  &--grey {
+    color: $colorGrey-dark;
+  }
+  &--color {
+    color: $mainColor-dark;
+  }
+}
+
+.heading-3 {
+  @extend %heading;
+  font-size: 1.6rem;
+  color: $mainColor-dark;
+  text-transform: uppercase;
+}
+
+.heading-4 {
+  @extend %heading;
+  font-size: 1.9rem;
+
+  &--light {
+    color: $mainColor;
+  }
+  &--dark {
+    color: $mainColor-dark;
+  }
+}
+
+.btn {
+  background-color: $mainColor;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  font-family: $font-display;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: $mainColor-dark;
+  }
+}
+
+.content-color {
+  &--dark {
+    color: $mainColor-dark;
+  }
+  &--main {
+    color: $mainColor;
+  }
+  &--light {
+    color: $mainColor-light;
+  }
+}
+.mb-sm {
+  margin-bottom: 2rem;
+}
+.mb-md {
+  margin-bottom: 3rem;
+}
+.mb-lg {
+  margin-bottom: 4rem;
+}
+.mb-hg {
+  margin-bottom: 8rem;
+}
